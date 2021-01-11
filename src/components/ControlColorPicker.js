@@ -1,4 +1,5 @@
 import React from 'react';
+import './ControlColorPicker.css'
 
 const ControlColorPicker = function (props) {
     const handleColorChange = event => {
@@ -6,8 +7,8 @@ const ControlColorPicker = function (props) {
     }
 
     return (
-        <div style={{'margin': '5px 0', 'font-size': '11px'}}>
-            <label style={{'display': 'block', 'margin-bottom': '4px' }}>{props.controlLabel}</label>
+        <div className="control-color-picker">
+            <label>{props.controlLabel}</label>
             <input
                 id="controlColorPicker"
                 type="color"

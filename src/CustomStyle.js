@@ -39,7 +39,7 @@ const updateCamera = (camera, width, height) => {
 };
 
 const CustomStyle = React.memo(
-  ({ block, mod1, mod2, color1, attributesRef }) => {
+  ({ block, mod1, mod2, color1, attributesRef, attribsCallback }) => {
     const shuffleBag = useRef();
     const group = useRef();
     const { size, viewport, camera } = useThree();

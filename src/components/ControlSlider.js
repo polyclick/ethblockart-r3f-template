@@ -3,14 +3,14 @@ import './ControlSlider.css'
 
 const ControlSlider = function (props) {
     const handleModChange = event => {
-        props.onChange(event.target.value)
+        props.onChange(parseFloat(event.target.value, 10))
     }
 
     return (
-        <div className={'control-slider'}>
+        <div className="control-slider">
             <label>{props.controlLabel}</label>
-            <div className={'control-input'}>
-                <div className={'value-label'}>{props.modValue}</div>
+            <div className="control-input">
+                <div className="value-label">{props.modValue}</div>
                 <input
                     id="controlSlider"
                     type="range"
